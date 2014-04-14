@@ -1,0 +1,40 @@
+div.header {
+    width: 100%;
+    float: left;
+}
+
+div.head {
+    margin: 0 auto;
+    width: 940px;
+}
+
+div.logo {
+    float: left;
+    width: 30%;
+}
+
+div.top-nav {
+    float: left;
+    width: 70%;
+}
+
+div.top-nav ul > li {
+    display: inline;
+    float: left;
+    padding: 10px;
+    width: 16.5%;    
+    text-align: center;
+    position: relative;
+}
+
+div.top-nav ul li > ul {
+    display: none;
+}
+
+div.top-nav ul li:hover > ul {
+    display: block;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 100%;
+}
