@@ -1,7 +1,63 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<h1>
+			JPA:&nbsp;Java Persistence API</h1>
+		<p>
+			JPA es una especificaci&oacute;n. Por tanto, tiene implementaciones, donde las m&aacute;s comunes son: EclipseLink, Hibernate y OpenJPA</p>
+		<p>
+			<strong>Acercamiento:</strong><br />
+			- Las tablas viven dentro de una base de datos y las entidades viven dentro de un &quot;Entity Manager&quot;.</p>
+		<ul>
+			<li>
+				Tablas equivalen a Entidades y Base de datos equivale a Entity Manager.</li>
+			<li>
+				Una Entidad Corresponde a un registro</li>
+		</ul>
+		<p>
+			<strong>Entidad JPA</strong></p>
+		<ul>
+			<li>
+				Clase Java que sigue las reglas de los JavaBeans: Implements Serializable, contructor y getters/setters.</li>
+			<li>
+				El Objeto que instancia una Entidad (clase), equivale a un registro en la tabla.</li>
+		</ul>
+		<p>
+			Para convertir un JavaBean en Entidad, se le agregan 2 anotaciones: @Entity antes de la declaraci&oacute;n de la clase y @Id luego de la declaraci&oacute;n de la clase y antes de los atributos.</p>
+		<p>
+			Toda Entidad JPA debe tener un ID &uacute;nico.</p>
+		<p>
+			La entidad se llama igual que la clase.<br />
+			La Tabla en la base de datos se llama igual que la clase.</p>
+		<p>
+			Si se desea hacer cambios, se puede usar:<br />
+			@Entity (name=&quot;nombre-entidad&quot; )<br />
+			@Table (name=&quot;nombre tabla&quot;)</p>
+		<p>
+			Se debe registrar la entidad en el archivo persistence.xml que tiene la definici&oacute;n &quot;Persistence Unit&quot; a partir del cual se genera un Entity Manager (Contenedor de entidades)</p>
+		<p>
+			<br />
+			<strong>RelationsShips</strong><br />
+			Existen cuatro formas de mapeo:</p>
+		<ul>
+			<li>
+				Relaci&oacute;n One-To-One (valores simples).</li>
+			<li>
+				Relaci&oacute;n Many-To-One (valores simples)</li>
+			<li>
+				Relaci&oacute;n One-To-Many (colecciones de valores)</li>
+			<li>
+				Relaci&oacute;n Many-To-Many (colecciones de valores)</li>
+		</ul>
+		<p>
+			<br />
+			<strong>OneToMany / ManyToOne</strong></p>
+		<p>
+			El Lado many-to-one siempre es el lado &quot;Owner&quot; de la relaci&oacute;n. Por tanto, la anotaci&oacute;n @JoinColumn debe estar en dicho lado.<br />
+			+ El atributo optional=false indica que la relaci&oacute;n siempre debe existir<br />
+			+ La anotaci&oacute;n @JoinColumn especifica en el atributo &quot;name&quot; el nombre de la columna en la tabla &quot;Owner&quot; de la relaci&oacute;n. Mientras que el atributo &quot;referencedColumnName&quot; especifica el nombre de la columna en la tabla destino (Lado inverso de la relaci&oacute;n).<br />
+			+ Contiene un atributo del tipo lado Inverso que es un valor simple<br />
+			El lado one-to-many es el lado &quot;Inverso&quot; de la relaci&oacute;n. Por tanto, el elemento mappedBy debe estar en dicho lado. Ej: @OneToMany(fetch=FetchType.EAGER mappedBy=&quot;customer&quot;, targetEntity=Order.Class)<br />
+			+ Continene un atributo del tipo lado Owner que es una colecci&oacute;n de valores&nbsp;</p>
 </body>
 </html>
