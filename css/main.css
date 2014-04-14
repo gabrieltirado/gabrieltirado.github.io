@@ -1,9 +1,9 @@
-div.header {
+div.header, div.slider {
     width: 100%;
     float: left;
 }
 
-div.head {
+div.head, div.slide {
     margin: 0 auto;
     width: 940px;
 }
@@ -18,13 +18,37 @@ div.top-nav {
     width: 70%;
 }
 
-div.top-nav ul > li {
-    display: inline;
+div.top-nav > ul {
     float: left;
-    padding: 10px;
-    width: 16.5%;    
+    padding: 0;
+    margin: 0;
+}    
+div.top-nav ul > li {    
+    float: left;
+    padding: 10px;     
     text-align: center;
     position: relative;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 44px;
+    margin-left: 1em;
+}
+
+div.top-nav ul > li a {    
+    display: inline-block;    
+    line-height: 16px;
+    padding: 14px 14px 15px 18px;
+    position: relative;
+    white-space: nowrap;
+    color: #444;    
+    font-family: "Trebuchet ms", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+div.top-nav ul > li a:hover {    
+    text-decoration: underline;
 }
 
 div.top-nav ul li > ul {
@@ -38,3 +62,26 @@ div.top-nav ul li:hover > ul {
     left: 50%;
     width: 100%;
 }
+
+div.slider {
+    background: url("../images/slide1.png") no-repeat scroll 0px 0px transparent;
+    border-top: 2px solid #0CB9D6;
+    height: 300px;
+    line-height: 300px;
+    overflow: hidden;
+}
+
+div.slide h1.txt-slide {
+    background-color: #0CB9D6;
+    color: #FFF;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-left: -8970px;
+    max-width: 470px;
+    position: relative;
+    vertical-align: middle;
+    padding: 56px 35px 56px 8970px;
+}
+
