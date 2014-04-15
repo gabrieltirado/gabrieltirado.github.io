@@ -7,7 +7,7 @@ div.header, div.slider {
     float: left;
 }
 
-div.head, div.slide, div.wrapper_destacados {
+div.head, div.slide, div.wrapper_destacados, div.news {
     margin: 0 auto;
     width: 940px;
 }
@@ -51,7 +51,7 @@ div.top-nav ul > li a {
 }
 
 div.top-nav ul > li a:hover {    
-    text-decoration: underline;
+    text-decoration: underline;    
 }
 
 div.top-nav ul li > ul {
@@ -68,7 +68,7 @@ div.top-nav ul li:hover > ul {
 
 div.slider {
     background: url("../images/slide1.png") no-repeat scroll 0px 0px transparent;
-    border-top: 2px solid #0CB9D6;
+    border: 2px solid #0CB9D6;
     height: 300px;
     line-height: 300px;
     overflow: hidden;
@@ -88,6 +88,10 @@ div.slide h1.txt-slide {
     padding: 56px 35px 56px 8970px;
 }
 
+div.wrapper_destacados {
+    margin-top: 15px;
+}
+
 div.wrapper_destacados div.destacados {
     float: left;
     width: 32%;
@@ -105,4 +109,52 @@ div.wrapper_destacados div.destacados > h2 {
     padding: 5px;
     width: 90%;
     font-size: 20px
+}
+
+div.wrapper_news {
+    border: 2px solid #0CB9D6;
+    height: 300px;    
+    overflow: hidden;
+    width: 100%;    
+    float: left;
+    margin-top: 15px;
+}
+
+div.news {
+    margin-top: 85px;
+    padding-left: 125px;
+}
+
+ul.listNews {        
+    float: left;    
+    margin: 0 18px;    
+    width: 30%;
+    list-style: circle;
+    color: #0CB9D6;
+}
+
+ul.listNews:first-child {             
+    margin-left: 0;
+}
+
+ul.listNews:last-child {             
+    margin-right: 0;
+}
+
+ul.listNews > li:first-child {
+    list-style: none;
+}
+
+ul.listNews a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul.listNews a:hover {
+    text-decoration: underline;
+}
+
+ul.listNews > li:first-child h2 {        
+    font-size: 20px;
+    font-weight: bold;
 }
