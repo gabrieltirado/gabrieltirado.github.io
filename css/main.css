@@ -1,9 +1,13 @@
+html {
+    font-family: "Trebuchet ms", Arial, sans-serif;
+}
+
 div.header, div.slider {
     width: 100%;
     float: left;
 }
 
-div.head, div.slide {
+div.head, div.slide, div.wrapper_destacados {
     margin: 0 auto;
     width: 940px;
 }
@@ -40,8 +44,7 @@ div.top-nav ul > li a {
     padding: 14px 14px 15px 18px;
     position: relative;
     white-space: nowrap;
-    color: #444;    
-    font-family: "Trebuchet ms", Arial, sans-serif;
+    color: #444;        
     font-size: 16px;
     font-weight: normal;
     text-decoration: none;
@@ -85,3 +88,21 @@ div.slide h1.txt-slide {
     padding: 56px 35px 56px 8970px;
 }
 
+div.wrapper_destacados div.destacados {
+    float: left;
+    width: 32%;
+    margin: 0 5px;
+}
+
+div.wrapper_destacados div.destacados > p {
+    padding: 5px;
+    width: 90%;
+    text-align: justify;
+    font-size: 16px
+}
+
+div.wrapper_destacados div.destacados > h2 {
+    padding: 5px;
+    width: 90%;
+    font-size: 20px
+}
