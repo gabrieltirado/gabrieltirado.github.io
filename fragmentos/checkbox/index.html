@@ -1,0 +1,86 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+<script src="../css_browser_selector.js"></script>
+
+<script>
+    $(document).ready(function() {
+        var countChecked = function(element) {
+            var n = $("input:checked").length;
+            $("div").text(n + (n === 1 ? " is" : " are") + " checked!");
+        };
+        
+        
+    });
+
+</script>
+
+<style>
+    div.check {
+        float: left;
+        width: 40%;
+        margin: 50px;
+    }
+
+    div.checkboxAfiliado span {
+        display: none;            
+    }
+    
+    html.ie7 div.check,
+    html.ie8 div.check {
+        display: none;
+    }
+    
+    div.checkboxAfiliado input[type="checkbox"] {
+        display: none;
+    }
+    div.chekie78 {
+        display: none;
+    }
+    
+    html.ie7 div.chekie78,
+    html.ie8 div.chekie78,
+    html.ie8 div.checkboxAfiliado input[type="checkbox"] {
+        display: block;
+    }
+
+    div.checkboxAfiliado input[type="checkbox"] + label {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        margin: -1px 4px 0 0;
+        vertical-align: middle;
+        /*background:url("check_checkbox_sheet.png") left top no-repeat;*/
+        background: url("check_radio_sheet.png") no-repeat left top;
+        cursor: pointer;
+    }
+    div.checkboxAfiliado input[type="checkbox"] + label {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        margin: -1px 4px 0 0;
+        vertical-align: middle;
+        /*background:url("check_checkbox_sheet.png") left top no-repeat;*/
+        background: url("check_radio_sheet.png") no-repeat left top;
+        cursor: pointer;
+    }
+    div.checkboxAfiliado input[type="checkbox"]:checked + label{
+        /*background: url("check_checkbox_sheet.png") -19px top no-repeat;*/
+        background: url("check_radio_sheet.png") no-repeat -21px top;        
+    }
+    div.checkboxAfiliado input[type="checkbox"]:checked + label {
+        /*background: url("check_checkbox_sheet.png") -19px top no-repeat;*/
+        background: url("check_radio_sheet.png") no-repeat -21px top;        
+    }
+</style>
+
+<div class="check checkboxAfiliado">    
+    <input type="checkbox" id="c0" name="cc0" class="checkbox"/>
+    <label for="c0"><span>Si</span></label>
+</div>
+
+<div class="chekie78">    
+    <input type="radio" id="c0" name="cc0" class="checkbox"/>
+</div>
+<div class="chekie78">
+    <input type="radio" id="c1" name="cc" class="checkbox"/>
+</div>

@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <title>Destacados</title>
+        <link href="../fragmentos.css" type="text/css" rel="stylesheet" />
+        <link href="../google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="../google-code-prettify/prettify.js"></script>
+        <script type="text/javascript" src="../google-code-prettify/run_prettify.js?skin=desert"></script>
+        <style>
+            .mainsprite {
+                background: url("mainSprite.png") no-repeat scroll 0px 0px transparent;    
+            }
+        </style>
+
+        <style>            
+            div.destacadoPrincipal {
+                width: 450px;
+                float: left;
+                position: relative;
+            }
+
+            div.destacadoPrincipal div.head {
+                height: 75px;
+                width: 100%;
+                float: left;
+                position: relative;                
+            }
+
+            div.destacadoPrincipal div.head div.icon-title {
+                float: left;
+                width: 28px;
+                height: 28px;                             
+            }
+
+            div.destacadoPrincipal div.head div.txttitle {
+                float: left;
+                width: 80%;
+                margin: 25px auto 0 30px;    
+            }      
+
+            div.destacadoPrincipal div.head div.txttitle h1.title {                
+                font-family: "AverageSans", arial, sans-serif;
+                font-weight: normal;
+                font-size: 18px;  
+                margin: 0 0 0 50px; 
+                width: 75%;
+            }
+
+            div.destacadoPrincipal div.head div.txttitle h1.title p {                                
+                margin: 3px 0 0 0;                 
+            }
+
+            div.destacadoPrincipal div.head div.txttitle h1.titletop {
+                margin: 0;
+                width: 75%;
+                float: left;   
+            } 
+
+            div.destacadoPrincipal div.image {
+                float: left;
+                width: 100%;
+                height: 196px;
+            }
+
+            div.destacadoPrincipal div.intro {
+                float: left;
+                border-top: 1px solid #dedede;
+                border-left: 1px solid #dedede;
+                border-bottom: 1px solid #dedede;
+                border-right: 1px solid #dedede;                
+                padding: 10px 25px 20px 25px;                
+                width: 398px;
+            }
+
+            div.destacadoPrincipal div.intro h1.titleintro {
+                color: #767676;
+                font-family: "AverageSans", arial, sans-serif;
+                font-weight: normal;
+                font-size: 17px;
+            }
+
+            div.destacadoPrincipal div.intro p.txtintro {
+                color: #9b9b9b;
+                font-family: "Armata", arial, sans-serif;    
+                font-weight: normal;
+                font-size: 11px;
+            }
+
+            div.destacadoPrincipal div.intro a.vermas {
+                color: #00aecb;
+                font-family: "Armata", arial, sans-serif;    
+                font-weight: normal; 
+                font-size: 11px;
+                text-decoration: none;
+                float: left;
+                margin: 4px 0 0 10px;
+            }
+
+            div.destacadoPrincipal div.intro .btnvermas .iconplus {
+                width: 21px;
+                height: 21px;
+                background-position: -700px -6px;
+                float: left;
+            }
+
+            div.destacadoSeguridad div.head {                
+                background: #00aecb;
+            }            
+
+            div.destacadoSeguridad div.head div.txttitle h1.title {
+                color: #fff;
+            }            
+
+            div.destacadoSeguridad div.head div.icon-title {
+                background-position: -1640px -90px;
+            }
+
+            div.destacadoCompartir div.head {                
+                background: #c6c6c6;
+            }            
+
+            div.destacadoCompartir div.head div.txttitle h1.title {
+                color: #fff;
+            }            
+
+            div.destacadoCompartir div.head div.icon-title {
+                background-position: -1640px -90px;
+            }
+
+        </style>
+    </head>
+    <body>        
+
+        <div class="destacadoPrincipal destacadoSeguridad">
+            <div class="head">
+                <div class="txttitle">
+                    <div class="icon-title mainsprite"></div>
+                    <h1 class="title"><p>Destacado</p></h1>
+                </div>
+                <div class="arrowbottom"></div>
+            </div>
+            <div class="image">
+                <img src="tipsseguridad.jpg" alt="">
+            </div>
+            <div class="intro">
+                <h1 class="titleintro">Tips de seguridad</h1>
+                <p class="txtintro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <div class="btnvermas">
+                    <div class="iconplus mainsprite"></div>
+                    <a href="javascript:;" class="vermas">Te invitamos a conocer más</a>
+                </div>
+            </div>            
+        </div>
+
+        <div class="destacadoCompartir destacadoPrincipal">
+            <div class="head">
+                <div class="txttitle">
+                    <div class="icon-title mainsprite"></div>
+                    <h1 class="title titletop"><span>Comparte</span><br /><span> esta nota en:</span></h1>
+                </div>                
+            </div>            
+            <div class="content contentIconSocial">                                                                                  
+                <ul>
+                    <li>
+                        <a href="javascript:;" title="Facebook" class="facebook">
+                            <div class="iconsocial facebook mainsprite"></div>
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" title="Google+" class="googleplus">
+                            <div class="iconsocial googleplus mainsprite"></div>
+                            <span>Google+</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" title="Twitter" class="twitter">
+                            <div class="iconsocial twitter mainsprite"></div>
+                            <span>Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" title="Foursquare" class="foursquare">
+                            <div class="iconsocial facebook mainsprite"></div>
+                            <span>Foursquare</span>
+                        </a>
+                    </li>
+                </ul>                
+            </div>                                            
+        </div>
+
+        <div class="clear"></div>
+
+        <p> <strong>Código</strong> </p>
+
+        <br />
+
+        <pre class="prettyprint lang-html">
+            <xmp></xmp>
+        </pre>
+    </body>
+</html>

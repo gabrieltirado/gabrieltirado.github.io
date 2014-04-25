@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <title>Destacados</title>
+        <link href="../fragmentos.css" type="text/css" rel="stylesheet" />
+        <link href="../google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="../google-code-prettify/prettify.js"></script>
+        <script type="text/javascript" src="../google-code-prettify/run_prettify.js?skin=desert"></script>
+        <style>
+            .mainsprite {
+                background: url("mainSprite.png") no-repeat scroll 0px 0px transparent;    
+            }
+        </style>
+
+        <style>            
+            div.destacado {
+                width: 310px;
+                float: left;
+                position: relative;
+            }
+
+            div.hover {
+                background: #64b9b1;
+                position: absolute;
+                opacity: 0.95; 
+                width: 310px;
+                height: 433px;
+                z-index: 99;
+                display: none;
+            }
+
+            div.destacado:hover div.hover {
+                display: block;
+            }
+
+            html.ie7 div.hover,
+            html.ie8 div.hover {
+                /* IE 8 */
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";    
+
+                /* IE 5-7 */
+                filter: alpha(opacity=95);
+                top: 0;
+                clear: both;
+            }
+
+            div.hover div.sumary {
+                float: left;
+                margin-top: 98px;
+                padding: 35px 45px 60px;
+            }                        
+
+            div.hover div.sumary p {
+                color: #fff;
+                font-family: "Armata", arial, sans-serif;    
+                font-weight: normal; 
+                font-size: 11px;        
+            }
+
+            div.hover div.sumary li a {
+                text-decoration: none;       
+            }
+
+
+            div.hover div.sumary ul {
+                padding: 0;  
+                margin: 0;
+            }
+
+            div.hover div.sumary > ul > li {
+                display: block;
+                float: left;
+                width: 40%;
+                margin: 0 10px;
+            }
+
+            div.hover div.sumary ul li ul li {
+                display: block;
+                float: left;    
+            }
+
+            div.hover .btnvermas {
+                margin-left: 45px;
+            }
+
+            div.hover a.vermas {
+                color: #fff;
+                font-family: "Armata", arial, sans-serif;    
+                font-weight: normal; 
+                font-size: 11px;
+                text-decoration: none; 
+                float: left;
+                margin: 4px 0 0 10px;
+            }
+
+            div.hover .btnvermas:hover a.vermas {
+                color: #e3d829;   
+            }
+
+            div.hover .btnvermas .iconplus {
+                width: 21px;
+                height: 21px;
+                background-position: -1720px 0;
+                float: left;
+            }
+
+            div.hover .btnvermas:hover .iconplus {
+                background-position: -700px -28px;    
+            }
+
+            div.destacado div.head {
+                height: 98px;
+                width: 100%;
+                float: left;
+                position: relative;
+                background: #00aecb;
+            }
+
+            div.destacado div.head div.icon-title {
+                float: left;
+                width: 43px;
+                height: 43px;
+                margin-right: 17px;
+                background-position: -340px 0;
+            }
+
+            div.destacado div.head div.txttitle {
+                float: left;
+                width: 100%;
+                margin: 30px auto 0 30px;    
+            }
+
+            div.destacado:hover div.head div.txttitle {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 100;
+            }
+
+            div.destacado div.head div.txttitle h1.title {
+                color: #FFFFFF;
+                font-family: "AverageSans", arial, sans-serif;
+                font-weight: normal;
+                font-size: 18px;  
+                margin: 10px 0px 0 0px; 
+                width: 230px;
+            }
+
+            div.destacado div.head div.txttitle h1.titletop {
+                margin: 0;
+                width: 190px;
+                float: left;   
+            } 
+
+
+            div.arrowbottom {
+                width: 0;
+                height: 0;
+                z-index: 1;
+                margin-top: 98px;
+                clear: both;
+                border-left: 7px solid transparent;
+                border-top: 7px solid #00aecb;
+                border-right: 7px solid transparent;   
+                margin-left: 150px;
+            }
+
+            html.ie7 div.arrowbottom {
+                bottom: -7px;
+                position: absolute;
+            }
+
+            div.destacado div.image {
+                float: left;
+                height: 166px;
+            }
+
+            div.destacado div.intro {
+                float: left;
+                border-top: 1px solid #dedede;
+                border-left: 1px solid #dedede;
+                border-bottom: 1px solid #dedede;
+                padding: 0 25px 15px;
+                height: 152px;
+                width: 259px;
+            }
+
+            div.destacado div.intro h1.titleintro {
+                color: #767676;
+                font-family: "AverageSans", arial, sans-serif;
+                font-weight: normal;
+                font-size: 17px;
+            }
+
+            div.destacado div.intro p.txtintro {
+                color: #9b9b9b;
+                font-family: "Armata", arial, sans-serif;    
+                font-weight: normal;
+                font-size: 11px;
+            }
+
+            div.destacado div.intro a.vermas {
+                color: #00aecb;
+                font-family: "Armata", arial, sans-serif;    
+                font-weight: normal; 
+                font-size: 11px;
+                text-decoration: none;
+                float: left;
+                margin: 4px 0 0 10px;
+            }
+
+            div.destacado div.intro .btnvermas .iconplus {
+                width: 21px;
+                height: 21px;
+                background-position: -700px -6px;
+                float: left;
+            }
+            
+            div.destacadoCompartir div.head {
+                background: #008ad1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="destacado banner-destacado first-child">
+            <div class="head">
+                <div class="txttitle">
+                    <div class="icon-title mainsprite"></div>
+                    <h1 class="title">Protecci&oacute;n contigo</h1>
+                </div>
+                <div class="arrowbottom"></div>
+            </div>
+            <div class="image">
+                <img src="destacado1.jpg" alt="">
+            </div>
+            <div class="intro">
+                <h1 class="titleintro">Para asesorarte</h1>
+                <p class="txtintro">Encuentra acompa&ntilde;amiento e informaci&oacute;n de acuerdo a tus objetivos de ahorro porque sabemos lo que te interesa.</p>
+                <div class="btnvermas">
+                    <div class="iconplus mainsprite"></div>
+                    <a href="javascript:;" class="vermas">Ver toda la informaci&oacute;n</a>
+                </div>
+            </div>
+            <div class="hover">
+                <div class="sumary">
+                    <p>Lorem Ipsum is simply dummy text of the printing and tyng industry. Lorempsum has been </p>
+                    <p>the industry</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorempsum has been the industry</p>
+                    <p>since the 1500s, when an unknown </p>
+                </div>
+                <div class="btnvermas">
+                    <div class="iconplus mainsprite"></div>
+                    <a href="javascript:;" class="vermas">Ver toda la informaci&oacute;n</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="destacado banner-destacado first-child">
+            <div class="head">
+                <div class="txttitle">
+                    <div class="icon-title mainsprite"></div>
+                    <h1 class="title">Protecci&oacute;n contigo</h1>
+                </div>
+                <div class="arrowbottom"></div>
+            </div>
+            <div class="image">
+                <img src="destacado1.jpg" alt="">
+            </div>
+            <div class="intro">
+                <h1 class="titleintro">Para asesorarte</h1>
+                <p class="txtintro">Encuentra acompa&ntilde;amiento e informaci&oacute;n de acuerdo a tus objetivos de ahorro porque sabemos lo que te interesa.</p>
+                <div class="btnvermas">
+                    <div class="iconplus mainsprite"></div>
+                    <a href="javascript:;" class="vermas">Ver toda la informaci&oacute;n</a>
+                </div>
+            </div>            
+        </div>
+
+        <div class="clear"></div>
+
+        <p> <strong>Código</strong> </p>
+
+        <br />
+
+        <pre class="prettyprint lang-html">
+            <xmp></xmp>
+        </pre>
+    </body>
+</html>

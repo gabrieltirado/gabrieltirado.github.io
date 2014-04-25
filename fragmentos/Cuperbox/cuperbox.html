@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Lightbox</title>
+    </head>
+    <body>    
+        <link rel="stylesheet" href="jquery.cuperbox_pp_1.0.css">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="jquery.cuperbox_pp_1.0.js"></script>
+        <script src="centrar.js"></script>
+        <script>
+            jQuery(document).ready(function() {
+                $('.lightbox').click(function(e) {
+                    /* Sumarle 21px al width del container */
+                    $(this).cuperbox({'iframe': {'src': '../lightbox/index_form.html'}, 'container': {'width': '688px', 'height': '357px'}});
+                    e.preventDefault();
+                });
+                $('.botones').centrar(); 
+            });
+        </script>
+        <div class="botones" style="float: left;">
+            <p>
+                <a href="../lightbox/index_form.html" class="lightbox">Lightbox</a>
+            </p>
+            <br />
+            <p>
+                <button class="lightbox">lightbox</button>
+            </p>
+        </div>
+    </body>
+</html>

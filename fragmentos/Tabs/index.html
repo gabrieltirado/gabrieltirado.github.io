@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <title>Tabs</title>
+        <link href="../fragmentos.css" type="text/css" rel="stylesheet" />
+        <link href="../google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="../google-code-prettify/prettify.js"></script>
+        <script type="text/javascript" src="../google-code-prettify/run_prettify.js?skin=desert"></script>
+        <style>
+            div.generaltabs {
+                float: left;
+            }
+
+            div.generaltabs ul.franjatabs{
+                float: left;
+                margin: 0;
+                padding: 5px 0 0 0;
+                background: #eee;	
+            }
+
+            div.generaltabs li {
+                display: block;
+                float: left;
+            }
+
+            div.generaltabs ul li.itemtab1 a{
+                width: 111px;
+                border-right: 1px solid #3bcde6;
+            }
+
+            div.generaltabs ul li.itemtab2 a,
+            div.generaltabs ul li.itemtab4 a {
+                width: 85px;
+                padding: 20px 27px;
+                border-right: 1px solid #3bcde6;
+            }
+
+            div.generaltabs ul li.itemtab3 a,
+            div.generaltabs ul li.itemtab5 a{
+                width: 96px;
+                padding: 20px 26px;
+                border-right: 1px solid #3bcde6;
+            }
+
+            div.generaltabs ul li a {                    
+                font-family: "AverageSans", arial, sans-serif;
+                font-weight: normal;
+                font-size: 14px;
+                background: #15c1de;
+                color: #fff;
+                display: block;
+                float: left;                
+                text-decoration: none;
+                padding: 20px 14px; 
+            } 
+
+            div.generaltabs ul li .noHasBr {  
+                padding: 8px 0;
+                text-align: center;
+            }
+
+            div.generaltabs ul li.currentTab a,
+            div.generaltabs ul li:hover a {  
+                margin-top: -5px;
+                padding-bottom: 20px;
+                background: #26a9c5;
+                padding-top: 25px;
+            }
+            /*
+                        div.tabscontent {
+                            background: none repeat scroll 0 0 #FFFFFF;
+                            float: left;
+                            margin-top: -1px;
+                            padding: 30px 20px 20px;
+                            width: 917px;
+                            display: none;
+                            line-height: 20px;
+                        }
+                        
+                        div.tabscontent img {
+                            margin-right: 16px;
+                            padding: 10px;
+                        }
+            
+                        div.tabscontent p {
+                            color: #666666;
+                            font-family: arial;
+                            font-size: 13px;
+                            margin-bottom: 25px;
+                        }*/
+        </style>
+    </head>
+    <body>
+        <div class="generaltabs">
+            <ul class="franjatabs">
+                <li class="itemtab1">
+                    <a href="javascript:;">
+                        <div class="wraptab">
+                            <span>Composición y</span><br /><span>saldo del objetivo</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="itemtab2 currentTab">
+                    <a href="javascript:;">
+                        <div class="wraptab">
+                            <span>Cálculo de la</span><br /><span>rentabilidad</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="itemtab3">
+                    <a href="javascript:;">
+                        <div class="wraptab">
+                            <span>Antiguedad de</span><br /><span>aportes</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="itemtab4">
+                    <a href="javascript:;">
+                        <div class="wraptab noHasBr">
+                            <span>Movimientos</span>                            
+                        </div>
+
+                    </a>
+                </li>
+                <li class="itemtab5">
+                    <a href="javascript:;">
+                        <div class="wraptab">
+                            <span>Productos</span><br /><span>complementarios</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <!-- /.franjatabs -->
+        </div>
+        <!-- /.generaltabs -->
+
+        <div class="clear"></div>
+        
+        <p> <strong>Código</strong> </p>
+        
+        <br />
+
+        <pre class="prettyprint lang-html">
+            <xmp>
+                <!--CSS-->
+                <style>                                                                       
+                    div.generaltabs {
+                        float: left;
+                    }
+
+                    div.generaltabs ul.franjatabs{
+                        float: left;
+                        margin: 0;
+                        padding: 5px 0 0 0;
+                        background: #eee;	
+                    }
+
+                    div.generaltabs li {
+                        display: block;
+                        float: left;
+                    }
+
+                    div.generaltabs ul li.itemtab1 a{
+                        width: 111px;
+                        border-right: 1px solid #3bcde6;
+                    }
+
+                    div.generaltabs ul li.itemtab2 a,
+                    div.generaltabs ul li.itemtab4 a {
+                        width: 85px;
+                        padding: 20px 27px;
+                        border-right: 1px solid #3bcde6;
+                    }
+
+                    div.generaltabs ul li.itemtab3 a,
+                    div.generaltabs ul li.itemtab5 a{
+                        width: 96px;
+                        padding: 20px 26px;
+                        border-right: 1px solid #3bcde6;
+                    }
+
+                    div.generaltabs ul li a {                    
+                        font-family: "AverageSans", arial, sans-serif;
+                        font-weight: normal;
+                        font-size: 14px;
+                        background: #15c1de;
+                        color: #fff;
+                        display: block;
+                        float: left;                
+                        text-decoration: none;
+                        padding: 20px 14px; 
+                    } 
+
+                    div.generaltabs ul li .noHasBr {  
+                        padding: 8px 0;
+                        text-align: center;
+                    }
+
+                    div.generaltabs ul li.currentTab a,
+                    div.generaltabs ul li:hover a {  
+                        margin-top: -5px;
+                        padding-bottom: 20px;
+                        background: #26a9c5;
+                        padding-top: 25px;
+                    }
+                </style>
+                
+                <!--HTML-->
+                <div class="generaltabs">
+                    <ul class="franjatabs">
+                        <li class="itemtab1">
+                            <a href="javascript:;">
+                                <div class="wraptab">
+                                    <span>Composición y</span><br /><span>saldo del objetivo</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="itemtab2 currentTab">
+                            <a href="javascript:;">
+                                <div class="wraptab">
+                                    <span>Cálculo de la</span><br /><span>rentabilidad</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="itemtab3">
+                            <a href="javascript:;">
+                                <div class="wraptab">
+                                    <span>Antiguedad de</span><br /><span>aportes</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="itemtab4">
+                            <a href="javascript:;">
+                                <div class="wraptab noHasBr">
+                                    <span>Movimientos</span>                            
+                                </div>
+
+                            </a>
+                        </li>
+                        <li class="itemtab5">
+                            <a href="javascript:;">
+                                <div class="wraptab">
+                                    <span>Productos</span><br /><span>complementarios</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.franjatabs -->
+                </div>
+                <!-- /.generaltabs -->  
+            </xmp>
+        </pre>
+    </body>
+</html>

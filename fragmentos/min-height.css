@@ -1,0 +1,5 @@
+.min-height {
+    height: auto !important;
+    height: 200px;
+    min-height: 200px;
+}

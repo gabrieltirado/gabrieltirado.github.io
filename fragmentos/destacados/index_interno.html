@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <title>Destacados</title>
+        <link href="../fragmentos.css" type="text/css" rel="stylesheet" />
+        <link href="../google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="../google-code-prettify/prettify.js"></script>
+        <script type="text/javascript" src="../google-code-prettify/run_prettify.js?skin=desert"></script>
+        <style>
+            .mainsprite {
+                background: url("mainSprite.png") no-repeat scroll 0px 0px transparent;    
+            }
+        </style>
+
+        <style>            
+            div.destacadoInterno {
+                width: 242px;
+                float: left;
+                position: relative;
+            }
+
+            div.destacadoInterno div.head {
+                height: 75px;
+                width: 100%;
+                float: left;
+                position: relative;
+            }
+
+            div.destacadoInterno div.head div.icon-title {
+                float: left;                
+                margin-right: 17px;
+            }
+            
+            div.destacadoCompartir div.head div.icon-title {                
+                width: 28px;
+                height: 28px;
+                margin-top: 8px;
+                background-position: -1520px -90px;
+            }
+
+            div.destacadoRelacionados div.head div.icon-title {                
+                width: 29px;
+                height: 29px;
+                margin-top: 10px;
+                background-position: -1550px -90px;
+            }
+
+            div.destacadoInterno div.head div.txttitle {
+                float: left;
+                width: 100%;
+                margin: 10px auto 0 30px;    
+            }
+
+            div.destacadoInterno div.head div.txttitle h1.title {
+                color: #fff;
+                font-family: "AverageSans", arial, sans-serif;
+                font-weight: normal;
+                font-size: 18px;  
+                margin: 10px 0px 0px 0px; 
+                width: 230px;
+            }
+            
+            div.destacadoRelacionados div.head div.txttitle h1.title {                 
+                margin: 15px 0 0 0;
+            }
+
+            div.destacadoInterno div.head div.txttitle h1.titletop {
+                margin: 0;
+                width: 180px;
+                float: left;   
+            }           
+
+            div.destacadoInterno div.content {
+                float: left;
+                border-top: 1px solid #e7e7e7;
+                border-left: 1px solid #e7e7e7;
+                border-right: 1px solid #e7e7e7;                              
+                border-bottom: 1px solid #e7e7e7;                              
+            }
+
+            div.destacadoInterno div.content p {
+                color: #9b9b9b;
+                font-family: "Armata", arial, sans-serif;    
+                font-weight: normal;
+                font-size: 11px;
+            }
+            
+            div.destacadoCompartir div.head {
+                background: #008ad1;
+            }
+            
+            div.destacadoCompartir div.content {
+                height: 100px;
+            }
+
+            div.destacadoRelacionados div.head {
+                background: #29a6e6;
+            }
+
+            div.destacadoRelacionados div.content {
+                /*height: 159px;*/
+            }
+            
+            div.destacadoInterno div.contentIconSocial ul {
+                padding: 0 0 0 15px;
+                float: left;
+            }
+            
+            div.destacadoInterno div.contentIconSocial ul li {
+                display: block;
+                float: left;
+                width: 90px;
+                margin: 5px;
+            }
+
+            div.destacadoInterno div.contentIconSocial ul li a {
+                font-family: "Armata", arial, sans-serif;    
+                font-weight: normal;
+                font-size: 10px;
+                color: #1a9de1;
+                text-decoration: none;
+            }
+
+            div.destacadoInterno div.iconsocial {
+                width: 23px;
+                height: 23px;
+                float: left;
+                margin: 0 10px;
+            }
+
+            div.destacadoInterno div.facebook {
+                background-position: -1350px -50px;
+                width: 7px;
+                height: 14px;
+            }            
+
+            div.destacadoInterno div.twitter {
+                background-position: -1360px -50px;
+                width: 12px;
+                height: 14px;
+            }
+
+            div.destacadoInterno div.googleplus {
+                background-position: -1380px -50px;
+                width: 17px;
+                height: 14px;
+            }
+
+            div.destacadoInterno div.email {
+                background-position: -1400px -50px;
+                width: 17px;
+                height: 11px;
+            }
+              
+            div.destacadoRelacionados div.content ul {
+                padding: 0 15px 0 18px;
+            }
+            
+            div.destacadoRelacionados div.content ul li {
+                color: #26a9c5;
+                display: block;
+                list-style-position:inside;                
+            }
+            
+            div.destacadoRelacionados div.content ul li a {
+                font-family: "Armata", arial, sans-serif;    
+                font-weight: normal;
+                font-size: 11px;
+                color: #26a9c5;
+                text-decoration: none;       
+            }
+
+        </style>
+    </head>
+    <body>               
+
+        <div class="destacadoCompartir destacadoInterno">
+            <div class="head">
+                <div class="txttitle">
+                    <div class="icon-title mainsprite"></div>
+                    <h1 class="title titletop"><span>Comparte</span><br /><span> esta nota en:</span></h1>
+                </div>                
+            </div>            
+            <div class="content contentIconSocial">                                                                                  
+                <ul>
+                    <li>
+                        <a href="javascript:;" title="Facebook" class="facebook">
+                            <div class="iconsocial facebook mainsprite"></div>
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" title="Google+" class="googleplus">
+                            <div class="iconsocial googleplus mainsprite"></div>
+                            <span>Google+</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" title="Twitter" class="twitter">
+                            <div class="iconsocial twitter mainsprite"></div>
+                            <span>Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" title="Foursquare" class="foursquare">
+                            <div class="iconsocial facebook mainsprite"></div>
+                            <span>Foursquare</span>
+                        </a>
+                    </li>
+                </ul>                
+            </div>                                            
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="destacadoRelacionados destacadoInterno">
+            <div class="head">
+                <div class="txttitle">
+                    <div class="icon-title mainsprite"></div>
+                    <h1 class="title">Además...</h1>
+                </div>                                                
+            </div>
+            <div class="content">                                                
+                <ul>
+                    <li><a href="javascript:;">&bullet; Los que piensan en grande hacen de sus cesantías un ahorro para su futuro</a></li>
+                    <li><a href="javascript:;">&bullet; Los que piensan en grande hacen de sus cesantías un ahorro para su futuro</a></li>
+                    <li><a href="javascript:;">&bullet; Ahora la comision.</a></li>
+                    <li><a href="javascript:;">&bullet; Los que piensan en grande hacen de sus cesantías un ahorro para su futuro</a></li>
+                    <li><a href="javascript:;">&bullet; Ahora la comision.</a></li>
+                </ul>                                                
+            </div>                                            
+        </div>
+
+
+        <div class="clear"></div>
+
+        <p> <strong>Código</strong> </p>
+
+        <br />
+
+        <pre class="prettyprint lang-html">
+            <xmp>
+                <!--CSS-->
+                <style>            
+                    div.destacadoInterno {
+                        width: 242px;
+                        float: left;
+                        position: relative;
+                    }
+
+                    div.destacadoInterno div.head {
+                        height: 75px;
+                        width: 100%;
+                        float: left;
+                        position: relative;
+                    }
+
+                    div.destacadoInterno div.head div.icon-title {
+                        float: left;                
+                        margin-right: 17px;
+                    }
+
+                    div.destacadoCompartir div.head div.icon-title {                
+                        width: 28px;
+                        height: 28px;
+                        margin-top: 8px;
+                        background-position: -1520px -90px;
+                    }
+
+                    div.destacadoRelacionados div.head div.icon-title {                
+                        width: 29px;
+                        height: 29px;
+                        margin-top: 10px;
+                        background-position: -1550px -90px;
+                    }
+
+                    div.destacadoInterno div.head div.txttitle {
+                        float: left;
+                        width: 100%;
+                        margin: 10px auto 0 30px;    
+                    }
+
+                    div.destacadoInterno div.head div.txttitle h1.title {
+                        color: #fff;
+                        font-family: "AverageSans", arial, sans-serif;
+                        font-weight: normal;
+                        font-size: 18px;  
+                        margin: 10px 0px 0px 0px; 
+                        width: 230px;
+                    }
+
+                    div.destacadoRelacionados div.head div.txttitle h1.title {                 
+                        margin: 15px 0 0 0;
+                    }
+
+                    div.destacadoInterno div.head div.txttitle h1.titletop {
+                        margin: 0;
+                        width: 180px;
+                        float: left;   
+                    }           
+
+                    div.destacadoInterno div.content {
+                        float: left;
+                        border-top: 1px solid #e7e7e7;
+                        border-left: 1px solid #e7e7e7;
+                        border-right: 1px solid #e7e7e7;                              
+                        border-bottom: 1px solid #e7e7e7;                              
+                    }
+
+                    div.destacadoInterno div.content p {
+                        color: #9b9b9b;
+                        font-family: "Armata", arial, sans-serif;    
+                        font-weight: normal;
+                        font-size: 11px;
+                    }
+
+                    div.destacadoCompartir div.head {
+                        background: #008ad1;
+                    }
+
+                    div.destacadoCompartir div.content {
+                        height: 100px;
+                    }
+
+                    div.destacadoRelacionados div.head {
+                        background: #29a6e6;
+                    }
+
+                    div.destacadoRelacionados div.content {
+                        /*height: 159px;*/
+                    }
+
+                    div.destacadoInterno div.contentIconSocial ul {
+                        padding: 0 0 0 15px;
+                        float: left;
+                    }
+
+                    div.destacadoInterno div.contentIconSocial ul li {
+                        display: block;
+                        float: left;
+                        width: 90px;
+                        margin: 5px;
+                    }
+
+                    div.destacadoInterno div.contentIconSocial ul li a {
+                        font-family: "Armata", arial, sans-serif;    
+                        font-weight: normal;
+                        font-size: 10px;
+                        color: #1a9de1;
+                        text-decoration: none;
+                    }
+
+                    div.destacadoInterno div.iconsocial {
+                        width: 23px;
+                        height: 23px;
+                        float: left;
+                        margin: 0 10px;
+                    }
+
+                    div.destacadoInterno div.facebook {
+                        background-position: -1350px -50px;
+                        width: 7px;
+                        height: 14px;
+                    }            
+
+                    div.destacadoInterno div.twitter {
+                        background-position: -1360px -50px;
+                        width: 12px;
+                        height: 14px;
+                    }
+
+                    div.destacadoInterno div.googleplus {
+                        background-position: -1380px -50px;
+                        width: 17px;
+                        height: 14px;
+                    }
+
+                    div.destacadoInterno div.email {
+                        background-position: -1400px -50px;
+                        width: 17px;
+                        height: 11px;
+                    }
+
+                    div.destacadoRelacionados div.content ul {
+                        padding: 0 15px 0 18px;
+                    }
+
+                    div.destacadoRelacionados div.content ul li {
+                        color: #26a9c5;
+                        display: block;
+                        list-style-position:inside;                
+                    }
+
+                    div.destacadoRelacionados div.content ul li a {
+                        font-family: "Armata", arial, sans-serif;    
+                        font-weight: normal;
+                        font-size: 11px;
+                        color: #26a9c5;
+                        text-decoration: none;       
+                    }
+
+                </style>
+                
+                <!--HTML-->
+                 <div class="destacadoCompartir destacadoInterno">
+                    <div class="head">
+                        <div class="txttitle">
+                            <div class="icon-title mainsprite"></div>
+                            <h1 class="title titletop"><span>Comparte</span><br /><span> esta nota en:</span></h1>
+                        </div>                
+                    </div>            
+                    <div class="content contentIconSocial">                                                                                  
+                        <ul>
+                            <li>
+                                <a href="javascript:;" title="Facebook" class="facebook">
+                                    <div class="iconsocial facebook mainsprite"></div>
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="Google+" class="googleplus">
+                                    <div class="iconsocial googleplus mainsprite"></div>
+                                    <span>Google+</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="Twitter" class="twitter">
+                                    <div class="iconsocial twitter mainsprite"></div>
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="Foursquare" class="foursquare">
+                                    <div class="iconsocial facebook mainsprite"></div>
+                                    <span>Foursquare</span>
+                                </a>
+                            </li>
+                        </ul>                
+                    </div>                                            
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="destacadoRelacionados destacadoInterno">
+                    <div class="head">
+                        <div class="txttitle">
+                            <div class="icon-title mainsprite"></div>
+                            <h1 class="title">Además...</h1>
+                        </div>                                                
+                    </div>
+                    <div class="content">                                                
+                        <ul>
+                            <li><a href="javascript:;">&bullet; Los que piensan en grande hacen de sus cesantías un ahorro para su futuro</a></li>
+                            <li><a href="javascript:;">&bullet; Los que piensan en grande hacen de sus cesantías un ahorro para su futuro</a></li>
+                            <li><a href="javascript:;">&bullet; Ahora la comision.</a></li>
+                            <li><a href="javascript:;">&bullet; Los que piensan en grande hacen de sus cesantías un ahorro para su futuro</a></li>
+                            <li><a href="javascript:;">&bullet; Ahora la comision.</a></li>
+                        </ul>                                                
+                    </div>                                            
+                </div>
+                <!-- /.generaltabs -->  
+            </xmp>
+        </pre>
+    </body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <title>Flechas Sin CSS3</title>
+        <link href="../fragmentos.css" type="text/css" rel="stylesheet" />
+        <link href="../google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="../google-code-prettify/prettify.js"></script>
+        <script type="text/javascript" src="../google-code-prettify/run_prettify.js?skin=desert"></script>
+        <style>   
+            div.wrapper {
+                width: 287px;
+                height: 287px;
+                background: #B6B6B6;
+                border-radius: 10px;
+                margin-left: 5px;                
+            }
+
+            div.wrapper table {
+                border-collapse: collapse;
+                margin: 0 auto;
+                border: none;
+            }
+
+            div.wrapper table tr td  {
+                border: 1px solid #f5f5f5;
+                border-spacing: 0;                
+            }
+
+            div.wrapper div.arrowbottom {        
+                width: 0;
+                height: 0;
+                z-index: 1;                
+                clear: both;
+                border-left: 70px solid transparent;
+                border-top: 70px solid #063598;                
+                border-right: 70px solid transparent;   
+            }
+
+            div.wrapper div.arrowright {
+                width: 0;
+                height: 0;                    
+                border-top: 70px solid transparent;   
+                border-left: 70px solid #063598;   
+                border-bottom: 70px solid transparent;
+            }
+
+            div.wrapper div.arrowleft {
+                width: 0;
+                height: 0;                    
+                border-top: 70px solid transparent;   
+                border-right:70px solid #063598;
+                border-bottom: 70px solid transparent;   
+            }
+
+            div.wrapper div.arrowtop {
+                width: 0;
+                height: 0;                    
+                border-left: 70px solid transparent;
+                border-bottom: 70px solid #063598;                
+                border-right: 70px solid transparent;    
+            }
+
+            div.wrapmarcador {        
+                float: left;
+            }
+
+            div.wraptxtmarcador {    
+                height: 24px;
+                width: 159px;
+                background: #43b8f4;
+                float: left;
+                padding: 0 25px;
+            }
+
+            div.wraptxtmarcador h1 {    
+                font-family: "Armata", arial, sans-serif;    
+                font-weight: normal;
+                font-size: 10px;
+                color: #fff;
+            }
+
+            div.arrowmarcador {        
+                width: 0;
+                height: 0;        
+                border-top: 12px solid transparent;   
+                border-left: 7px solid #43b8f4;   
+                border-bottom: 12px solid transparent;
+                float: left;     
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <table>
+                <tr class="item1">
+                    <td class="item1">
+                        <div class="arrowbottom"></div>
+                    </td>
+                    <td class="item2">
+                        <div class="arrowright"></div>
+                    </td>
+                </tr>
+                <tr class="item2">
+                    <td class="item1">
+                        <div class="arrowleft"></div> 
+                    </td>
+                    <td class="item2">
+                        <div class="arrowtop"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="wrapmarcador">
+            <div class="wraptxtmarcador">
+                <h1>Ejemplo de marcador</h1>
+            </div>
+            <div class="arrowmarcador"></div>
+        </div>
+
+        <div class="clear"></div>
+
+        <p> <strong>Código</strong> </p>
+
+        <br />
+
+        <pre class="prettyprint lang-html">
+            <xmp>
+                <!--CSS-->
+                <style>   
+                    div.wrapper {
+                        width: 350px;
+                        height: 510px;
+                        background: #B6B6B6;
+                        border-radius: 10px;
+                        margin-left: 5px;
+                    }
+
+                    div.wrapper div.arrowbottom {        
+                        width: 0;
+                        height: 0;
+                        border-left: 70px solid transparent;
+                        border-top: 70px solid #063598;                
+                        border-right: 70px solid transparent;   
+                    }
+
+                    div.wrapper div.arrowright {
+                        width: 0;
+                        height: 0;                    
+                        border-top: 70px solid transparent;   
+                        border-left: 70px solid #063598;   
+                        border-bottom: 70px solid transparent;
+                    }
+
+                    div.wrapper div.arrowleft {
+                        width: 0;
+                        height: 0;                    
+                        border-top: 70px solid transparent;   
+                        border-right:70px solid #063598;
+                        border-bottom: 70px solid transparent;   
+                    }
+
+                    div.wrapper div.arrowtop {
+                        width: 0;
+                        height: 0;                    
+                        border-left: 70px solid transparent;
+                        border-bottom: 70px solid #063598;                
+                        border-right: 70px solid transparent;    
+                    }
+                </style>
+                
+                <!--HTML-->
+                <div class="wrapper">
+                    <div class="arrowbottom"></div>
+                    <br />
+                    <div class="arrowright"></div>
+                    <br />
+                    <div class="arrowleft"></div>
+                    <br />
+                    <div class="arrowtop"></div>
+                </div> 
+                
+                
+                <!-- Ejemplo Marcador -->
+                <style>
+                    div.wrapmarcador {        
+                        float: left;
+                    }
+
+                    div.wraptxtmarcador {    
+                        height: 24px;
+                        width: 159px;
+                        background: #43b8f4;
+                        float: left;
+                        padding: 0 25px;
+                    }
+
+                    div.wraptxtmarcador h1 {    
+                        font-family: "Armata", arial, sans-serif;    
+                        font-weight: normal;
+                        font-size: 10px;
+                        color: #fff;
+                    }
+
+                    div.arrowmarcador {        
+                        width: 0;
+                        height: 0;        
+                        border-top: 12px solid transparent;   
+                        border-left: 7px solid #43b8f4;   
+                        border-bottom: 12px solid transparent;
+                        float: left;     
+                    }
+                </style>
+                
+                <div class="wrapmarcador">
+                    <div class="wraptxtmarcador">
+                        <h1>Ejemplo de marcador</h1>
+                    </div>
+                    <div class="arrowmarcador"></div>
+                </div>
+            </xmp>
+        </pre>
+    </body>
+</html>

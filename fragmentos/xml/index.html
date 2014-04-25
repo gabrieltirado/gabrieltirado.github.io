@@ -1,0 +1,40 @@
+
+
+<script src="http://www.w3schools.com/dom/loadxmldoc.js"></script>
+<script>
+
+
+/*xmlDoc=loadXMLDoc("paginas.xml");
+
+x=xmlDoc.getElementsByTagName("content-node");
+var uniquename = '';
+document.write('<table>');
+for (i=0;i<x.length;i++)
+{
+uniquename = x[i].getAttribute('uniquename');
+	if (uniquename != null && uniquename.substr(0,10) == 'proteccion'){
+		document.write('<tr><td>'  + uniquename + '</td><td>' + x[i].getAttribute('objectid') +'</td></tr>');
+		document.write("<br>");
+	}
+
+
+}
+document.write('</table>');*/
+xmlDoc=loadXMLDoc("Todo.xml");
+
+x=xmlDoc.getElementsByTagName("web-app");
+var uniquename = '';
+var uid = '';
+for (i=0;i<x.length;i++)
+{
+uid = x[i].getAttribute('uid');
+if ( uid == 'ilwwcm-localrenderingportlet-jsr.war.webmod'){
+     uniquename = x[i].getAttribute('uniquename');
+	if (uniquename != null && uniquename.substr(0,10) == 'proteccion'){
+		document.write( x[i].getAttribute('objectid') );
+		document.write("<br>");
+	}
+
+
+}
+</script>

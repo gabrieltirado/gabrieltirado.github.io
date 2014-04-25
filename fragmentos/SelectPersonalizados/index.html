@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Select Personalizados</title>
+        <link href="../fragmentos.css" type="text/css" rel="stylesheet" />
+        <link href="../google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="../google-code-prettify/prettify.js"></script>
+        <script type="text/javascript" src="../google-code-prettify/run_prettify.js?skin=desert"></script>
+        <style>
+            div.wrapCustomSelect {
+                width: 116px;
+                height: 22px;
+                overflow: hidden;
+                background: url("arrowselect.png") no-repeat scroll right 0 transparent;
+                border: 1px solid #ddd;
+            }
+
+            div.wrapCustomSelect:hover {
+                background: url("arrowselect.png") no-repeat scroll right -27px transparent;   
+            }
+
+            html.ie7 div.wrapCustomSelect {    
+                background: none;
+                border: none;
+            }
+
+            select.customSelect {    
+                font-family: "Armata", arial, sans-serif;    
+                font-weight: normal;
+                font-size: 10px;
+                background: transparent;
+                width: 100%;
+                height: 100%;    
+                color: #9b9b9b;
+                border: 0;
+                padding: 5px; /* @added */
+                -webkit-appearance: none;
+            }
+
+            html.gecko select.customSelect {       
+                width: 110%;
+                padding: 3px 0;
+            }
+
+            html.ie8 select.customSelect {       
+                height: 20px;
+                margin: 0;
+                padding: auto 0;
+            }
+
+            html.ie8 select.customSelect,
+            html.ie9 select.customSelect {       
+                width: 120%; /*Select mas ancho que div padre*/  
+                padding: 0;    
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapCustomSelect">
+            <select class="customSelect">
+                <option value="0">Seleccionar</option>
+                <option value="1">Opción 1</option>
+                <option value="2">Opción 2</option>
+                <option value="3">Opción 3</option>
+                <option value="4">Opción 4</option>
+            </select>
+        </div> 
+        <br />
+        <pre class="prettyprint lang-html">              
+            <xmp>
+                <!-- CSS -->
+                <style>
+                    div.wrapCustomSelect {
+                        width: 116px;
+                        height: 22px;
+                        overflow: hidden;
+                        background: url("arrowselect.png") no-repeat scroll right 0 transparent;
+                        border: 1px solid #ddd;
+                    }
+
+                    div.wrapCustomSelect:hover {
+                        background: url("arrowselect.png") no-repeat scroll right -27px transparent;   
+                    }
+
+                    html.ie7 div.wrapCustomSelect {    
+                        background: none;
+                        border: none;
+                    }
+
+                    select.customSelect {    
+                        font-family: "Armata", arial, sans-serif;    
+                        font-weight: normal;
+                        font-size: 10px;
+                        background: transparent;
+                        width: 100%;
+                        height: 100%;    
+                        color: #9b9b9b;
+                        border: 0;
+                        padding: 5px; /* @added */
+                        -webkit-appearance: none;
+                    }
+
+                    html.gecko select.customSelect {       
+                        width: 110%;
+                        padding: 3px 0;
+                    }
+
+                    html.ie8 select.customSelect {       
+                        height: 20px;
+                        margin: 0;
+                        padding: auto 0;
+                    }
+
+                    html.ie8 select.customSelect,
+                    html.ie9 select.customSelect {       
+                        width: 120%; /*Select mas ancho que div padre*/  
+                        padding: 0;    
+                    }
+                </style>
+                
+                <!-- HTML -->
+                <div class="wrapCustomSelect">
+                    <select class="customSelect">
+                        <option value="0">Seleccionar</option>
+                        <option value="1">Opción 1</option>
+                        <option value="2">Opción 2</option>
+                        <option value="3">Opción 3</option>
+                        <option value="4">Opción 4</option>
+                    </select>
+                </div> 
+            </xmp> 
+        </pre>
+    </body>
+</html>

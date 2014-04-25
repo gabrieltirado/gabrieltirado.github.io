@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <title>Celdas relativas en Firefox</title>
+        <link href="../fragmentos.css" type="text/css" rel="stylesheet" />
+        <link href="../google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="../google-code-prettify/prettify.js"></script>
+        <script type="text/javascript" src="../google-code-prettify/run_prettify.js?skin=desert"></script>
+
+    </head>
+    <body>
+
+        <h2>Error Posición Absoluta Firefox</h2>
+        <h3>Contenedor con posición absoluta dentro de una celda de una tabla con posición relativa</h3>
+        <p>En IE y Chrome al poner la posición relativa al td, el contenedor con posición absoluta no se sale del td,
+            <br />pero en firefox el contenedor absoluto se va al top de la página. <strong>:(</strong></p>
+        <img src="position.png" alt="Posiciones en IE,Chrome y Firefox" />
+
+        <p><strong>Solución:</strong></p>
+
+        <p>Cómo el posicionamiento en el td es tan problematico. Envolvemos (wrapper) el contenido de ese td en un div y a este si le ponemos absolute</p>
+
+        <div class="clear"></div>
+
+        <p> <strong>Código</strong> </p>
+
+        <br />
+
+        <pre class="prettyprint lang-html">
+            <xmp>   
+                
+                <!--Javascript (jQuery)-->
+                
+                
+                <script>                    
+                    /* Envolvemos el contenido en un div y a su vez lo ponemos relativo */
+                    this.parent().wrap('<div></div>').css({ position: 'relative' });
+
+                    /* Ahora el elemento si puede ser absoluto */
+                    this.css({ position: 'absolute', top: 0, left: 0 });
+                </script>
+                
+                
+                <!--HTML-->
+                
+                
+                <!-- Error -->
+                <table>
+                    <tr>
+                        <td style="position:relative;">
+                            <div style="position:absolute">
+                                <contents>...</contents>
+                            </div>
+                        </td>                        
+                    </tr>
+                </table>
+                
+                
+                <!-- Solución -->  
+                <table>
+                    <tr>
+                        <td>
+                            <div style="position:relative;">
+                                <div style="position:absolute">
+                                    <contents>...</contents>
+                                </div>
+                           </div>
+                        </td>                        
+                    </tr>
+                </table>
+                
+            </xmp>
+        </pre>
+    </body>
+</html>

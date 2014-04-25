@@ -1,0 +1,36 @@
+/* 
+    Document   : estilosFuentes
+    Created on : 26/06/2013, 01:26:24 PM
+    Author     : gtirado
+    Description:
+        El proposito de esta hoja de estilos es almacenar los estilos de las fuentes para su posterios reuso.*/
+
+.NotoSans-Regular {
+    font-family: "NotoSans-Regular", arial, sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+    color: #fff;
+}
+
+.Armata {
+    font-family: "Armata", arial, sans-serif;    
+    font-weight: normal;
+    font-size: 11px;
+    color: #fff;
+}
+
+.AverageSans {
+    font-family: "AverageSans", arial, sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+    color: #fff;
+}
+
+
+/*---*/
+.wf-active .entry-title {
+font-family: orbitron-1,orbitron-2,"Sorts Mill Goudy",serif;
+font-style: normal;
+font-weight: 700;
+font-variant: normal;
+}

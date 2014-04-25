@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <title>Tabs</title>
+        <link href="../fragmentos.css" type="text/css" rel="stylesheet" />
+        <link href="../google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="../google-code-prettify/prettify.js"></script>
+        <script type="text/javascript" src="../google-code-prettify/run_prettify.js?skin=desert"></script>
+        <style>                                
+            div.wrapCustomSelect:hover {
+                background: url("../SelectPersonalizados/arrowselect.png") no-repeat scroll right -27px transparent;   
+            }
+
+            html.ie7 div.wrapCustomSelect {    
+                background: none;
+                border: none;
+            }
+
+            select.customSelect {    
+                font-family: "Armata", arial, sans-serif;    
+                font-weight: normal;
+                font-size: 10px;
+                background: transparent;
+                width: 100%;
+                height: 100%;    
+                color: #9b9b9b;
+                border: 0;
+                padding: 5px; /* @added */
+                -webkit-appearance: none;
+            }
+
+            html.gecko select.customSelect {       
+                width: 110%;
+                padding: 3px 0;
+            }
+
+            html.ie8 select.customSelect {       
+                height: 20px;
+                margin: 0;
+                padding: auto 0;
+            }
+
+            html.ie8 select.customSelect,
+            html.ie9 select.customSelect {       
+                width: 120%; /*Select mas ancho que div padre*/  
+                padding: 0;    
+            }
+
+            div.tablaportafolios table {
+                border-collapse: collapse;
+                border-top: 2px solid #d1d1d1;
+            }
+
+            div.tablaportafolios tr td{
+                border: 1px solid #eaeaea;
+                border-spacing: 0;
+            }
+
+            div.tablaportafolios tr td.titleTable {
+                background: #e5e5e5;
+                text-align: center;
+                font-family: "AverageSans", arial, sans-serif;
+                font-weight: normal;
+                font-size: 14px;
+                color: #4c4c4c;
+            }
+
+            div.tablaportafolios tr td.rowSelect {
+                width: 184px;
+                height: 67px;
+                padding-left: 20px;
+            }
+
+            div.tablaportafolios tr td.rowSelect label {
+                font-family: "AverageSans", arial, sans-serif;
+                font-weight: normal;
+                font-size: 12px;
+                color: #767676;
+                margin-left: 5px;
+            }
+
+            div.tablaportafolios tr td.rowSelect div.wrapCustomSelect {
+                width: 135px;
+                height: 22px;
+                overflow: hidden;
+                background: url("../SelectPersonalizados/arrowselect.png") no-repeat scroll right 0 transparent;
+                border: 1px solid #ddd;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="tablaportafolios">
+            <table>
+                <tr>
+                    <td rowspan="2" class="rowSelect">
+                        <label>Portafolios de inversión </label>
+                        <div class="wrapCustomSelect">
+                            <select class="customSelect">
+                                <option value="0">Con saldo</option>
+                                <option value="1">Opción 1</option>
+                                <option value="2">Opción 2</option>
+                                <option value="3">Opción 3</option>
+                                <option value="4">Opción 4</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td colspan="6" class="titleTable">item2</td>                    
+                    <td colspan="2"></td>                    
+                </tr>
+                <tr>
+                    <td>item2</td>
+                    <td>item3</td>
+                    <td>item4</td>
+                    <td>item5</td>
+                    <td>item6</td>
+                    <td>item7</td>
+                    <td>item8</td>
+                    <td>item9</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="clear"></div>
+
+        <p> <strong>Código</strong> </p>
+
+        <br />
+
+        <pre class="prettyprint lang-html">
+            <xmp>
+                <!--CSS-->
+                <style>                                
+                    div.wrapCustomSelect:hover {
+                        background: url("../SelectPersonalizados/arrowselect.png") no-repeat scroll right -27px transparent;   
+                    }
+
+                    html.ie7 div.wrapCustomSelect {    
+                        background: none;
+                        border: none;
+                    }
+
+                    select.customSelect {    
+                        font-family: "Armata", arial, sans-serif;    
+                        font-weight: normal;
+                        font-size: 10px;
+                        background: transparent;
+                        width: 100%;
+                        height: 100%;    
+                        color: #9b9b9b;
+                        border: 0;
+                        padding: 5px; /* @added */
+                        -webkit-appearance: none;
+                    }
+
+                    html.gecko select.customSelect {       
+                        width: 110%;
+                        padding: 3px 0;
+                    }
+
+                    html.ie8 select.customSelect {       
+                        height: 20px;
+                        margin: 0;
+                        padding: auto 0;
+                    }
+
+                    html.ie8 select.customSelect,
+                    html.ie9 select.customSelect {       
+                        width: 120%; /*Select mas ancho que div padre*/  
+                        padding: 0;    
+                    }
+
+                    div.tablaportafolios table {
+                        border-collapse: collapse;
+                        border-top: 2px solid #d1d1d1;
+                    }
+
+                    div.tablaportafolios tr td{
+                        border: 1px solid #eaeaea;
+                        border-spacing: 0;
+                    }
+
+                    div.tablaportafolios tr td.titleTable {
+                        background: #e5e5e5;
+                        text-align: center;
+                        font-family: "AverageSans", arial, sans-serif;
+                        font-weight: normal;
+                        font-size: 14px;
+                        color: #4c4c4c;
+                    }
+
+                    div.tablaportafolios tr td.rowSelect {
+                        width: 184px;
+                        height: 67px;
+                        padding-left: 20px;
+                    }
+
+                    div.tablaportafolios tr td.rowSelect label {
+                        font-family: "AverageSans", arial, sans-serif;
+                        font-weight: normal;
+                        font-size: 12px;
+                        color: #767676;
+                        margin-left: 5px;
+                    }
+
+                    div.tablaportafolios tr td.rowSelect div.wrapCustomSelect {
+                        width: 135px;
+                        height: 22px;
+                        overflow: hidden;
+                        background: url("../SelectPersonalizados/arrowselect.png") no-repeat scroll right 0 transparent;
+                        border: 1px solid #ddd;
+                    }
+
+
+                </style>
+                
+                <!--HTML-->
+                <div class="tablaportafolios">
+                    <table>
+                        <tr>
+                            <td rowspan="2" class="rowSelect">
+                                <label>Portafolios de inversión </label>
+                                <div class="wrapCustomSelect">
+                                    <select class="customSelect">
+                                        <option value="0">Con saldo</option>
+                                        <option value="1">Opción 1</option>
+                                        <option value="2">Opción 2</option>
+                                        <option value="3">Opción 3</option>
+                                        <option value="4">Opción 4</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td colspan="6" class="titleTable">item2</td>                    
+                            <td colspan="2"></td>                    
+                        </tr>
+                        <tr>
+                            <td>item2</td>
+                            <td>item3</td>
+                            <td>item4</td>
+                            <td>item5</td>
+                            <td>item6</td>
+                            <td>item7</td>
+                            <td>item8</td>
+                            <td>item9</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /.generaltabs -->  
+            </xmp>
+        </pre>
+    </body>
+</html>

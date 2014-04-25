@@ -1,0 +1,173 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+<script src="../css_browser_selector.js"></script>
+<script>
+    $(document).ready(function() {
+        $('input[type="submit"]').click(function() {
+            $("form").validate({
+                debug: true
+            });
+        });
+    });
+</script>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    div.formlightbox {
+        float: left;
+        background: #fff;
+        width: 667px;
+    }    
+
+    div.formlightbox div.rightbox {
+        float: left;
+        width: 46.5%;
+    }
+
+    div.formlightbox div.contentimg {
+        width: 310px;
+        height: 357px;
+    }
+
+    div.formlightbox div.leftbox {
+        float: left;
+        width: 49%; /*width: 53.5%;*/
+        padding-left: 4.5%;
+    }
+
+    div.formlightbox div.parrafointro {         
+        float: left; 
+        width: 85%;
+    }
+
+    div.formlightbox div.parrafointro p.txtParrafo {
+        font-family: "Armata", arial, sans-serif;    
+        font-weight: normal;
+        font-size: 11px;
+        color: #a1a1a1;
+        text-align: justify;
+        float: left;
+    }
+
+    div.formlightbox h1.txtTitleLightbox {
+        font-family: "AverageSans", arial, sans-serif;
+        font-weight: normal;
+        font-size: 23px; 
+        color: #0a54a2;        
+    }
+
+    div.formlightbox div.campos ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    div.formlightbox div.campos ul li {
+        display: block;
+        float: left;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    div.formlightbox div.campos ul li.last-child {        
+        margin-top: 18px;
+        width: 87.5%;
+    }
+
+    div.formlightbox html.ie7 div.campos ul li.last-child,
+    div.formlightbox html.ie8 div.campos ul li.last-child,        
+    div.formlightbox html.ie9 div.campos ul li.last-child {        
+        width: 91.5%;
+    }
+
+    div.formlightbox label {
+        font-family: "AverageSans", arial, sans-serif;
+        font-weight: normal;
+        font-size: 13px; 
+        color: #696969;   
+    }
+
+    div.formlightbox input[type="text"] {
+        font-family: "Armata", arial, sans-serif;    
+        font-weight: normal;
+        font-size: 12px;
+        color: #9a9a9a;
+        border: 1px solid #d1d1d1;
+        outline: none;
+        width: 287px;
+        height: 36px;
+        padding: 0 5px;
+        background: none;       
+    }
+
+    div.formlightbox html.ie7 input[type="text"],
+    div.formlightbox html.ie8 input[type="text"],
+    div.formlightbox html.ie9 input[type="text"] {
+        height: 25px;
+        padding-top: 11px;
+    }
+
+    div.formlightbox input.enviar {
+        float: left;
+    }
+
+    div.formlightbox input.cancelar {
+        float: right;
+    }
+
+    div.formlightbox input[type="submit"] {
+        color: #fff;
+        font-family: "AverageSans", arial, sans-serif;
+        font-weight: normal;    
+        font-size: 18px;
+        background: #579edb;
+        border: none;  
+        width: 142px;
+        height: 36px;        
+    }
+
+    div.formlightbox input[type="submit"]:hover {    
+        background: #e3d829;
+    }
+
+    div.formlightbox .error {
+        display: block;
+        color: red;
+    }
+
+</style>
+<div class="formlightbox">
+    <div class="rightbox">
+        <div class="contentimg"><img src="foto.jpg" alt=""></div>
+    </div>
+    <div class="leftbox">
+        <h1 class="txtTitleLightbox">Enviar a un amigo</h1>
+        <div class="parrafointro">
+            <p class="txtParrafo">Al acceder a las consultas y transacciones del portal transaccional, usando la clave personal que Protección S.A. le ha asignado para este fin.</p>
+        </div>
+        <form action="">
+            <div class="campos">                
+                <ul>
+                    <li>
+                        <label for="">De</label>
+                    </li>
+                    <li>
+                        <input type="text" class="required" name="from">                    
+                    </li>
+                    <li>
+                        <label for="">Para</label>
+                    </li>
+                    <li>
+                        <input type="text" class="required" name="to">
+                    </li>
+                    <li class="last-child">
+                        <input type="submit" value="Enviar" class="enviar">
+                        <input type="submit" value="Cancelar" class="cancelar">
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</div>
