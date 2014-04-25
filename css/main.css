@@ -64,6 +64,7 @@ div.top-nav ul li:hover > ul {
     top: 80%;
     left: 50%;   
     background: #ffffff;
+    z-index: 1;
 }
 
 div.slider {
