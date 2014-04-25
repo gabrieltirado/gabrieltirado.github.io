@@ -62,8 +62,7 @@ div.top-nav ul li:hover > ul {
     display: block;
     position: absolute;
     top: 80%;
-    left: 50%;
-    width: 100%;
+    left: 50%;    
 }
 
 div.slider {
