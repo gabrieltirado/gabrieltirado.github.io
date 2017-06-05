@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Cleaner - Cleaning Services HTML5 Template</title>
+    <!-- CSS Links-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="css/ion.tabs.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- PAGE HEADER -->
+    <header class="page-header page-header_multi">
+      <!-- topbar -->
+      <div class="topbar-wrapper">
+        <div class="container">
+          <div class="topbar">
+            <div class="topbar__section">
+              <ul class="list-contacts">
+                <li class="list-contacts__item"><span class="list-contacts__label">Specialist cleaning service.</span></li>
+              </ul>
+            </div>
+            <div class="topbar__section"><a class="button button_default button_colored-2" id="js-toggle-estimate" href="#">Quick estimate</a>
+              <div class="page-header_multi__form-estimate" id="js-form-estimate">
+                <form class="form form_estimate" action="home-01.html" method="GET">
+                  <div class="form-control form_estimate__control">
+                    <input class="form-control__input form_estimate__control-input" type="text" placeholder="Your Name">
+                  </div>
+                  <div class="form-control form_estimate__control">
+                    <input class="form-control__input form_estimate__control-input" type="email" placeholder="Email">
+                  </div>
+                  <div class="form-control form_estimate__control">
+                    <input class="form-control__input form_estimate__control-input" type="tel" placeholder="Phone Number">
+                  </div>
+                  <div class="form-control form_estimate__control">
+                    <select class="form-control__input form_estimate__control-input">
+                      <option>Cleaning Services</option>
+                      <option>Residental Cleaning</option>
+                      <option>Construction Cleaning</option>
+                      <option>Commercial Cleaning</option>
+                      <option>Vehicle Cleaning</option>
+                      <option>Office Cleaning</option>
+                      <option>Wall Cleaning</option>
+                    </select>
+                  </div>
+                  <div class="form-control form_estimate__control">
+                    <input class="form-control__input form_estimate__control-input" type="text" placeholder="dd/mm/yyyy">
+                  </div>
+                  <div class="form-control form_estimate__control">
+                    <textarea class="form-control__input form_estimate__control-input form_estimate__control-textarea form-control__textarea" placeholder="Address"></textarea>
+                  </div>
+                  <div class="form-control form_estimate__control">
+                    <textarea class="form-control__input form_estimate__control-input form_estimate__control-textarea form-control__textarea" placeholder="Description"></textarea>
+                  </div>
+                  <div class="form__wrapper-submit form_estimate__wrapper-submit"><a class="form__submit-button button button_default button_large" href="#">Get quick estimate</a></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- - topbar -->
+      <!-- nav -->
+      <div class="top-navigation-wrapper">
+        <nav class="top-navigation">
+          <div class="top-navigation__logo"><a class="site-logo" href="index.html"><img class="site-logo__img img-rounded" src="img/frogs/logofrogs.png" alt="Frogs on the run"></a></div>
+          <div class="top-navigation__menu">
+            <div class="container">
+              <ul class="list-top-menu">
+                <li class="list-top-menu__item"><a class="list-top-menu__link" href="index.html">Home</a>
+                  <!--<ul class="list-submenu">
+                    <li class="list-submenu__item"><a class="list-submenu__link" href="index.html">Home v1</a></li>
+                    <li class="list-submenu__item"><a class="list-submenu__link" href="home-02.html">Home v2</a></li>
+                  </ul>-->
+                </li>
+                <li class="list-top-menu__item list-top-menu__item_has-submenu"><a class="list-top-menu__link" href="#">About us</a>
+                  <ul class="list-submenu">
+                    <li class="list-submenu__item"><a class="list-submenu__link" href="about.html">About Company</a></li>
+                    <li class="list-submenu__item"><a class="list-submenu__link" href="about-history.html">Our History</a></li>
+                  </ul>
+                </li>
+                <li class="list-top-menu__item list-top-menu__item_has-submenu"><a class="list-top-menu__link" href="#">Services</a>
+                  <ul class="list-submenu">
+                    <li class="list-submenu__item"><a class="list-submenu__link" href="services.html">Our Services</a></li>
+                    <li class="list-submenu__item"><a class="list-submenu__link" href="service-details.html">Service Details</a></li>
+                  </ul>
+                </li>
+                <li class="list-top-menu__item list-top-menu__item_has-submenu"><a class="list-top-menu__link" href="#">Gallery</a>
+                  <ul class="list-submenu">
+                    <li class="list-submenu__item"><a class="list-submenu__link" href="gallery-3col-box.html">Gallery 3 Columns Box</a></li>
+                    <li class="list-submenu__item"><a class="list-submenu__link" href="gallery-3col-fullwidth.html">Gallery 3 Columns Fullwidth</a></li>
+                    <li class="list-submenu__item"><a class="list-submenu__link" href="gallery-4col-box.html">Gallery 4 Columns Box</a></li>
+                    <li class="list-submenu__item"><a class="list-submenu__link" href="gallery-4col-fullwidth.html">Gallery 4 Columns Fullwidth</a></li>
+                  </ul>
+                </li>
+                <li class="list-top-menu__item list-top-menu__item_has-submenu"><a class="list-top-menu__link" href="#">Team</a>
+                  <ul class="list-submenu">
+                    <li class="list-submenu__item"><a class="list-submenu__link" href="team.html">Our Team</a></li>
+                    <li class="list-submenu__item"><a class="list-submenu__link" href="team-details.html">Member Details</a></li>
+                  </ul>
+                </li>
+                <li class="list-top-menu__item"><a class="list-top-menu__link" href="pricing.html">Pricing</a></li>
+                <li class="list-top-menu__item list-top-menu__item_has-submenu"><a class="list-top-menu__link" href="#">Blog</a>
+                  <ul class="list-submenu">
+                    <li class="list-submenu__item"><a class="list-submenu__link" href="blog.html">Blog List Posts</a></li>
+                    <li class="list-submenu__item"><a class="list-submenu__link" href="blog-singlepost.html">Blog Singlepost</a></li>
+                  </ul>
+                </li>
+                <li class="list-top-menu__item"><a class="list-top-menu__link" href="contacts.html">Contact</a></li>
+              </ul>
+            </div>
+          </div><a class="top-navigation__toggle-menu" id="js-toggle-menu" href="#"></a>
+        </nav>
+      </div>
+      <!-- - nav -->
+    </header>
+    <!-- - PAGE HEADER -->
+    <!-- PAGE MAIN -->
+    <!-- page inner heading -->
+    <header class="page-inner-header _overlay-accent-2 _background-image-1 js-jarallax_type_1">
+      <div class="container">
+        <h1 class="page-inner-header__heading">About us</h1>
+        <nav class="page-inner-header__breadcrumbs">
+          <ul class="list-breadcrumbs">
+            <li class="list-breadcrumbs__item"><a class="list-breadcrumbs__link" href="#">Home</a></li>
+            <li class="list-breadcrumbs__item"><a class="list-breadcrumbs__link" href="#">About us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- - page inner heading -->
+    <main class="page-main">
+      <!-- section ABOUT -->
+      <section class="page-section page-section_about page-section_about-inner _background-image-2 js-jarallax_type_1 _overlay-light">
+        <div class="page-section_about-inner__shifted-content">
+          <div class="container">
+            <div class="page-section_about__gallery">
+              <div class="swiper-container slider-gallery js-slider-gallery-about js-popup-gallery">
+                <div class="swiper-wrapper slider-gallery__wrapper">
+                  <!-- gallery image 1 -->
+                  <div class="swiper-slide slider-gallery__slide"><a class="gallery__item" href="img/gallery/fullwidth/fullwidth1.jpg"><img class="slider-gallery__img" src="img/about/about-slide1.jpg" alt=""></a></div>
+                  <!-- - gallery image 1 -->
+                  <!-- gallery image 2 -->
+                  <div class="swiper-slide slider-gallery__slide"><a class="gallery__item" href="img/gallery/fullwidth/fullwidth2.jpg"><img class="slider-gallery__img" src="img/about/about-slide2.jpg" alt=""></a></div>
+                  <!-- - gallery image 2 -->
+                  <!-- gallery image 3 -->
+                  <div class="swiper-slide slider-gallery__slide"><a class="gallery__item" href="img/gallery/fullwidth/fullwidth3.jpg"><img class="slider-gallery__img" src="img/about/about-slide3.jpg" alt=""></a></div>
+                  <!-- - gallery image 3 -->
+                  <!-- gallery image 4 -->
+                  <div class="swiper-slide slider-gallery__slide"><a class="gallery__item" href="img/gallery/fullwidth/fullwidth4.jpg"><img class="slider-gallery__img" src="img/about/about-slide4.jpg" alt=""></a></div>
+                  <!-- - gallery image 4 -->
+                  <!-- gallery image 5-->
+                  <div class="swiper-slide slider-gallery__slide"><a class="gallery__item" href="img/gallery/fullwidth/fullwidth1.jpg"><img class="slider-gallery__img" src="img/about/about-slide1.jpg" alt=""></a></div>
+                  <!-- - gallery image 5-->
+                </div><span class="slider-gallery__prev"></span><span class="slider-gallery__next"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="page-section_about__wrapper-info">
+                  <div class="page-section_about__wrapper-img"><img class="page-section_about__img" src="img/about/about3.jpg" alt=""></div>
+                  <div class="page-section_about__info">
+                    <h4 class="page-section_about__subheading">Our history</h4>
+                    <p class="p page-section_about__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable...</p>
+                    <div class="page-section_about__wrapper-button"><a class="button button_default button_large button_colored-2" href="about-history.html">Read more</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="page-section_about__wrapper-info">
+                  <div class="page-section_about__wrapper-img"><img class="page-section_about__img" src="img/about/about4.jpg" alt=""></div>
+                  <div class="page-section_about__info">
+                    <h4 class="page-section_about__subheading">Jhon Doe</h4>
+                    <p class="p page-section_about__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a to using able English.</p><img src="img/about/signature.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- - section ABOUT -->
+      <!-- section FEATURES-->
+      <section class="page-section page-section_features">
+        <header class="page-section__header">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="subline"><span class="subline__text">Our</span><span class="subline__text">Mission</span></div>
+                <h2 class="page-section__heading_multi">Our mission</h2>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="page-section__content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6"><img class="page-section_features__img" src="img/about/about2.jpg" alt=""></div>
+              <div class="col-md-6">
+                <div class="page-section_features__list-features">
+                  <ul class="list-features">
+                    <li class="list-features__item">
+                      <div class="feature"><i class="feature__icon pe-7s-mouse"></i>
+                        <div class="feature__content">
+                          <h3 class="feature__heading">High-quality service</h3>
+                          <p class="p">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-features__item">
+                      <div class="feature"><i class="feature__icon pe-7s-gleam"></i>
+                        <div class="feature__content">
+                          <h3 class="feature__heading">Happy customers</h3>
+                          <p class="p">Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites discovered the undoubtable source.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-features__item">
+                      <div class="feature"><i class="feature__icon pe-7s-users"></i>
+                        <div class="feature__content">
+                          <h3 class="feature__heading">Effective teamwork</h3>
+                          <p class="p">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-features__item">
+                      <div class="feature"><i class="feature__icon pe-7s-news-paper"></i>
+                        <div class="feature__content">
+                          <h3 class="feature__heading">Happy customers</h3>
+                          <p class="p">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- - section FEATURES -->
+      <!-- aside FACTS -->
+      <aside class="page-aside page-aside_facts _background-image-4 _overlay-accent-2 js-jarallax_type_1">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="page-aside_facts__counter-up">
+                <div class="counter-up"><span class="counter-up__number js-counterup">3700</span><span class="counter-up__label">Customer satisfied</span></div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="page-aside_facts__counter-up">
+                <div class="counter-up"><span class="counter-up__number js-counterup">1100</span><span class="counter-up__label">Buildings cleaned</span></div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="page-aside_facts__counter-up">
+                <div class="counter-up"><span class="counter-up__number js-counterup">2028</span><span class="counter-up__label">Clever employees</span></div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="page-aside_facts__counter-up">
+                <div class="counter-up"><span class="counter-up__number js-counterup">32</span><span class="counter-up__label">Offices wordlwide</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- - aside FACTS -->
+      <!-- - section FEATURES -->
+        
+      <!-- section SLIDER TEAM -->
+      <!-- - section SLIDER TEAM -->
+        
+      <!-- aside BRANDS -->
+      <aside class="page-aside page-aside_brands _background-color-dark">
+        <div class="container">
+          <div class="page-aside_brands__content">
+            <!-- brand 1 -->
+            <div class="brand"><img class="brand__logo" src="img/logos/logo1.png" alt=""></div>
+            <!-- - brand 1 -->
+            <!-- brand 2 -->
+            <div class="brand"><img class="brand__logo" src="img/logos/logo2.png" alt=""></div>
+            <!-- - brand 2 -->
+            <!-- brand 3 -->
+            <div class="brand"><img class="brand__logo" src="img/logos/logo3.png" alt=""></div>
+            <!-- - brand 3 -->
+            <!-- brand 4 -->
+            <div class="brand"><img class="brand__logo" src="img/logos/logo4.png" alt=""></div>
+            <!-- - brand 4 -->
+            <!-- brand 5 -->
+            <div class="brand"><img class="brand__logo" src="img/logos/logo5.png" alt=""></div>
+            <!-- - brand 5 -->
+          </div>
+        </div>
+      </aside>
+      <!-- - aside BRANDS -->
+      <!-- section CONTACTS -->
+      <section class="page-section page-section_contacts _background-image-6 _overlay-dark js-jarallax_type_1">
+        <div class="contacts-map" id="js-google-map-contacts"></div>
+        <div class="page-section_contacts__content">
+          <div class="container">
+            <div class="contact-info">
+              <div class="contact-info__content">
+                <div class="contact-info__logo"><a class="site-logo" href="home-02.html"><img class="site-logo__img img-rounded" src="img/frogs/logofrogs.png" alt="Frogs on the run"></a></div>
+                <p class="p _color-inverse">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.the release of.</p>
+              </div>
+              <div class="contact-info__form">
+                <header class="page-section_contacts__header">
+                  <h2 class="page-section_contacts__heading">Contact us</h2>
+                </header>
+                <form class="form form_contact" action="home-02.html" method="GET">
+                  <div class="form-control form_contact__control">
+                    <input class="form-control__input form_contact__control-input" type="text" placeholder="Name">
+                  </div>
+                  <div class="form-control form_contact__control">
+                    <input class="form-control__input form_contact__control-input" type="email" placeholder="Email">
+                  </div>
+                  <div class="form-control form_contact__control">
+                    <input class="form-control__input form_contact__control-input" type="text" placeholder="Subject">
+                  </div>
+                  <div class="form-control form_contact__control">
+                    <textarea class="form-control__input form_contact__control-input form_contact__control-textarea form-control__textarea" placeholder="Message"></textarea>
+                  </div>
+                  <div class="form__wrapper-submit form_contact__wrapper-submit"><a class="form__submit-button button button_default button_large button_inverse" href="#">Send Message</a></div>
+                </form>
+              </div>
+              <div class="contact-info__content">
+                <ul class="list-contacts-2">
+                  <li class="list-contacts-2__item">
+                    <div class="contact">
+                      <div class="contact__wrapper-icon"><i class="contact__icon fa fa-map-marker"></i></div>
+                      <div class="contact__wrapper-content">
+                        <h3 class="contact__heading">Address</h3><span class="contact__label">795 Folsom Ave, San Francisco</span><span class="contact__label">NY 20001</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-contacts-2__item">
+                    <div class="contact">
+                      <div class="contact__wrapper-icon"><i class="contact__icon fa fa-phone"></i></div>
+                      <div class="contact__wrapper-content">
+                        <h3 class="contact__heading">Phone</h3><span class="contact__label">+(067) 123 456 789</span><span class="contact__label">+(067) 123 456 789</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-contacts-2__item">
+                    <div class="contact">
+                      <div class="contact__wrapper-icon"><i class="contact__icon fa fa-envelope"></i></div>
+                      <div class="contact__wrapper-content">
+                        <h3 class="contact__heading">Email</h3><span class="contact__label">info@cleaner.in</span><span class="contact__label">inquiry@cleaner.in</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- - section CONTACTS -->
+    </main>
+    <!-- - PAGE MAIN --><a class="scroll-to-top" id="js-scroll-to-top" href="#"></a>
+    <!-- PAGE FOOTER -->
+    <footer class="page-footer page-footer_multi">
+      <div class="container">
+        <div class="page-footer_multi__social">
+          <ul class="list-social list-social_large">
+            <li class="list-social__item"><a class="list-social__link fa fa-facebook" href="#"></a></li>
+            <li class="list-social__item"><a class="list-social__link fa fa-twitter" href="#"></a></li>
+            <li class="list-social__item"><a class="list-social__link fa fa-google-plus" href="#"></a></li>
+            <li class="list-social__item"><a class="list-social__link fa fa-linkedin" href="#"></a></li>
+          </ul>
+        </div>
+        <div class="page-footer_multi__copyright"><small class="page-footer_multi__copyright-text">Copyright © 2017 - Cleaner</small></div>
+      </div>
+    </footer>
+    <!-- - PAGE FOOTER -->
+    <!-- Common JS-->
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/jquery.easeScroll.js"></script>
+    <script src="js/jquery.equalheights.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jarallax.min.js"></script>
+    <script src="js/ion.tabs.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/circle-progress.min.js"></script>
+    <script src="js/jquery.accordion.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/maplace.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3gFKhVywUkygSxQEBdGVrI5-ZRrdjueA"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>
